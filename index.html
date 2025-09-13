@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栄養素チャレンジ！🍎</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 栄養素チャレンジ！ 🌟</h1>
+            <p class="subtitle">食べ物をクリックして栄養をMAXにしよう！</p>
+        </header>
+
+        <main>
+            <div class="game-container">
+                <div class="chart-wrapper">
+                    <canvas id="nutrientChart"></canvas>
+                    <div class="center-text">
+                        <span class="score-label">スコア</span>
+                        <span class="score-value" id="scoreValue">0</span>
+                        <span class="score-max">/24</span>
+                    </div>
+                </div>
+
+                <div class="food-container">
+                    <h3 class="food-title">たべもの</h3>
+
+                    <div class="food-item" data-food="broccoli">
+                        <span class="food-icon">🥦</span>
+                        <span class="food-name">ブロッコリー</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">ビタミンC</span>
+                            <span class="nutrient-tag">食物繊維</span>
+                            <span class="nutrient-tag">ビタミンA</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="pork">
+                        <span class="food-icon">🥩</span>
+                        <span class="food-name">豚肉</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">タンパク質</span>
+                            <span class="nutrient-tag">鉄分</span>
+                            <span class="nutrient-tag">ビタミンD</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="fish">
+                        <span class="food-icon">🐟</span>
+                        <span class="food-name">さかな</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">タンパク質</span>
+                            <span class="nutrient-tag">ビタミンD</span>
+                            <span class="nutrient-tag">カルシウム</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="carrot">
+                        <span class="food-icon">🥕</span>
+                        <span class="food-name">にんじん</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">ビタミンA</span>
+                            <span class="nutrient-tag">食物繊維</span>
+                            <span class="nutrient-tag">炭水化物</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="milk">
+                        <span class="food-icon">🥛</span>
+                        <span class="food-name">牛乳</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">カルシウム</span>
+                            <span class="nutrient-tag">タンパク質</span>
+                            <span class="nutrient-tag">ビタミンD</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="rice">
+                        <span class="food-icon">🍚</span>
+                        <span class="food-name">ごはん</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">炭水化物</span>
+                            <span class="nutrient-tag">食物繊維</span>
+                            <span class="nutrient-tag">鉄分</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="orange">
+                        <span class="food-icon">🍊</span>
+                        <span class="food-name">オレンジ</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">ビタミンC</span>
+                            <span class="nutrient-tag">食物繊維</span>
+                            <span class="nutrient-tag">炭水化物</span>
+                        </div>
+                    </div>
+
+                    <div class="food-item" data-food="spinach">
+                        <span class="food-icon">🥬</span>
+                        <span class="food-name">ほうれん草</span>
+                        <div class="food-nutrients">
+                            <span class="nutrient-tag">鉄分</span>
+                            <span class="nutrient-tag">ビタミンA</span>
+                            <span class="nutrient-tag">カルシウム</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="resetBtn" class="reset-button">🔄 もう一度チャレンジ！</button>
+        </main>
+
+    </div>
+
+    <script src="js/dartschart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
