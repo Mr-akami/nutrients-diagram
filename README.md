@@ -4,7 +4,7 @@
 
 ## 🎮 デモ
 
-[ここでプレイ！](https://yourusername.github.io/nutrients-diagram/)
+[ここでプレイ！](https://Mr-akami.github.io/nutrients-diagram/)
 
 ## ✨ 特徴
 
